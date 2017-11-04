@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    var filter = "win16|win32|win64|mac";
+
+    if( navigator.platform  ){
+        if( filter.indexOf(navigator.platform.toLowerCase())<0 ){
+            location.href='m_index.html'
+        }else{
+            location.href='popsong.html'
+        }
+    }
+</script>
+  </head>
+  <body>
+    <a href="popsong.html">PC접속일경우 클릭</a>
+    <a href="m_index.html">모바일접속일경우 클릭</a>
+
+  </body>
+</html>
